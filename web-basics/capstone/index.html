@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone E-Commerce</title>
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopSmart</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>Welcome to ShopSmart</h1>
+        <p>Your one-stop shop for smart deals!</p>
+    </header>
+    <main>
+        <section id="products" class="products-section">
+            <h2>Products</h2>
+            <div class="filters">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="books">Books</option>
+                    <option value="clothing">Clothing</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="default">Sort By</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating-desc">Rating: High to Low</option>
+                </select>
+            </div>
+            <div id="productList" class="product-list"></div>
+        </section>
+        <section id="cart" class="cart-section">
+            <h2>Your Cart</h2>
+            <ul id="cartList"></ul>
+            <div id="cartTotal"></div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+                <div id="formMsg"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 ShopSmart
+    </footer>
+    <script src="app.min.js"></script>
+</body>
+</html>
