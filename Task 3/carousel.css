@@ -1,0 +1,41 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 40px auto;
+}
+.carousel img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+button {
+    background: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #005fa3;
+}
+@media (max-width: 600px) {
+    .carousel img {
+        width: 90vw;
+        height: 40vw;
+        min-width: 180px;
+        min-height: 80px;
+    }
+    button {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+}
