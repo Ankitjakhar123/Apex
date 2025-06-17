@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm a web developer passionate about building interactive and responsive websites.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <div class="project-list">
+            <div class="project-card">
+                <h2>To-Do List App</h2>
+                <p>A simple to-do list with local storage support.</p>
+            </div>
+            <div class="project-card">
+                <h2>Image Carousel</h2>
+                <p>An interactive image carousel built with JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h2>API Joke Fetcher</h2>
+                <p>Fetches and displays jokes from a public API.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <form id="portfolioContactForm">
+            <input type="text" id="pname" placeholder="Your Name" required>
+            <input type="email" id="pemail" placeholder="Your Email" required>
+            <textarea id="pmessage" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <div id="pformMsg"></div>
+        </form>
+    </section>
+    <footer>
+        &copy; 2025 MyPortfolio
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
